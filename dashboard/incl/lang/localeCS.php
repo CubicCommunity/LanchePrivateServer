@@ -39,6 +39,8 @@ $string["errorGeneric"] = "Došlo k chybě:";
 $string["tryAgainBTN"] = "Zkusit znovu";
 //songAdd.php
 $string["songAddUrlFieldLabel"] = "Adresa URL Songu: (Pouze přímý odkaz nebo odkaz na Dropbox)";
+$string["songNameFieldPlaceholder"] = "Song name";
+$string["songAuthorFieldPlaceholder"] = "Song author";
 $string["songAddUrlFieldPlaceholder"] = "Adresa URL Songu";
 $string["songAddAnotherBTN"] = "Další song";
 ///errors

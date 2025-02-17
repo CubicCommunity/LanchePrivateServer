@@ -39,6 +39,8 @@ $string["errorGeneric"] = "Dogodila se greška:";
 $string["tryAgainBTN"] = "Pokušajte ponovo";
 //songAdd.php
 $string["songAddUrlFieldLabel"] = "Link pjesme: (Samo direktni ili Dropbox linkovi)";
+$string["songNameFieldPlaceholder"] = "Song name";
+$string["songAuthorFieldPlaceholder"] = "Song author";
 $string["songAddUrlFieldPlaceholder"] = "Link pjesme";
 $string["songAddAnotherBTN"] = "Još jedna pjesma";
 ///errors

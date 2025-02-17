@@ -39,6 +39,8 @@ $string["errorGeneric"] = "ข้อผิดพลาด :";
 $string["tryAgainBTN"] = "ลองอีกครั้ง";
 //songAdd.php
 $string["songAddUrlFieldLabel"] = "URL ไฟล์เสียง (ลิ้งไฟล์เพลงโดยตรง,Dropbox เท่านั้น)";
+$string["songNameFieldPlaceholder"] = "Song name";
+$string["songAuthorFieldPlaceholder"] = "Song author";
 $string["songAddUrlFieldPlaceholder"] = "URL ไฟล์เสียง";
 $string["songAddAnotherBTN"] = "เพิ่มเพลงต่อไป";
 ///errors

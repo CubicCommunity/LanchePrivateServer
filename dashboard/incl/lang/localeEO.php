@@ -39,6 +39,8 @@ $string["errorGeneric"] = "Eraro Havas Okazita:";
 $string["tryAgainBTN"] = "Provu Denove";
 //songAdd.php
 $string["songAddUrlFieldLabel"] = "Kanto URL: (Rekta Ligilo aŭ Dropbox nur)";
+$string["songNameFieldPlaceholder"] = "Song name";
+$string["songAuthorFieldPlaceholder"] = "Song author";
 $string["songAddUrlFieldPlaceholder"] = "Kanto URL";
 $string["songAddAnotherBTN"] = "Alia Kanto";
 ///errors

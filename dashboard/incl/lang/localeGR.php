@@ -39,6 +39,8 @@ $string["errorGeneric"] = "Υπάρχει κάποιο πρόβλημα:";
 $string["tryAgainBTN"] = "Δοκιμάστε ξανά";
 //songAdd.php
 $string["songAddUrlFieldLabel"] = "URL Τραγουδιού: (Μόνο σύνδεσμοι Direct ή Dropbox)";
+$string["songNameFieldPlaceholder"] = "Song name";
+$string["songAuthorFieldPlaceholder"] = "Song author";
 $string["songAddUrlFieldPlaceholder"] = "URL Τραγουδιού";
 $string["songAddAnotherBTN"] = "Κι άλλο τραγούδι";
 ///errors

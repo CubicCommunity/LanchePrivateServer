@@ -55,6 +55,8 @@ $string["errorGeneric"] = "Произошла ошибка:";
 $string["tryAgainBTN"] = "Попробуйте снова";
 //songAdd.php
 $string["songAddUrlFieldLabel"] = "Ссылка на трек: (только прямые ссылки или Dropbox)";
+$string["songNameFieldPlaceholder"] = "Song name";
+$string["songAuthorFieldPlaceholder"] = "Song author";
 $string["songAddUrlFieldPlaceholder"] = "Ссылка на трек";
 $string["songAddAnotherBTN"] = "Добавить ещё";
 ///errors

@@ -39,6 +39,8 @@ $string["errorGeneric"] = "Tekkis viga:";
 $string["tryAgainBTN"] = "Proovi jälle";
 //songAdd.php
 $string["songAddUrlFieldLabel"] = "Laulu URL: (Direct või Dropbox lingid ainult)";
+$string["songNameFieldPlaceholder"] = "Song name";
+$string["songAuthorFieldPlaceholder"] = "Song author";
 $string["songAddUrlFieldPlaceholder"] = "LauluURL";
 $string["songAddAnotherBTN"] = "Teine laul";
 ///errors

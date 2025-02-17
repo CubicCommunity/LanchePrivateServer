@@ -39,6 +39,8 @@ $string["errorGeneric"] = "Hata:";
 $string["tryAgainBTN"] = "Tekrar Dene";
 //songAdd.php
 $string["songAddUrlFieldLabel"] = "Şarkı Linki: (Direkt veya DropBox. YOUTUBE LINKI ÇALIŞMAZ!)";
+$string["songNameFieldPlaceholder"] = "Song name";
+$string["songAuthorFieldPlaceholder"] = "Song author";
 $string["songAddUrlFieldPlaceholder"] = "Şarkı Linki";
 $string["songAddAnotherBTN"] = "Daha Fazla";
 ///errors

@@ -32,6 +32,8 @@ $string["errorGeneric"] = "Kesalahan terjadi:";
 $string["tryAgainBTN"] = "Coba lagi";
 //songAdd.php
 $string["songAddUrlFieldLabel"] = "URL Lagu: (Hanya tautan langsung, dan Dropbox yang diperbolehkan)";
+$string["songNameFieldPlaceholder"] = "Song name";
+$string["songAuthorFieldPlaceholder"] = "Song author";
 $string["songAddUrlFieldPlaceholder"] = "URL Lagu";
 $string["songAddAnotherBTN"] = "Lagu Lainnya";
 ///errors

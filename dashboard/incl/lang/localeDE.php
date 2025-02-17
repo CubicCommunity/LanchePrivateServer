@@ -39,6 +39,8 @@ $string["errorGeneric"] = "Ein Fehler ist aufgetreten:";
 $string["tryAgainBTN"] = "Versuch es Nochmal";
 //songAdd.php
 $string["songAddUrlFieldLabel"] = "Song URL: (Nur Direkte, Dropbox oder Soundcloud Links. KEINE YOUTUBE LINKS!)";
+$string["songNameFieldPlaceholder"] = "Song name";
+$string["songAuthorFieldPlaceholder"] = "Song author";
 $string["songAddUrlFieldPlaceholder"] = "Song URL/Link";
 $string["songAddAnotherBTN"] = "Noch ein Song Hizufügen";
 ///errors

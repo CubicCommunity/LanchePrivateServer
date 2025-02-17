@@ -39,6 +39,8 @@ $string["errorGeneric"] = "An error has occured:";
 $string["tryAgainBTN"] = "Try Again";
 //songAdd.php
 $string["songAddUrlFieldLabel"] = "Song URL: (Direct or Dropbox Links Only)";
+$string["songNameFieldPlaceholder"] = "Song name";
+$string["songAuthorFieldPlaceholder"] = "Song author";
 $string["songAddUrlFieldPlaceholder"] = "Song URL";
 $string["songAddAnotherBTN"] = "Another Song";
 ///errors
