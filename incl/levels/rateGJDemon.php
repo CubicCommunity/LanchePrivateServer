@@ -5,21 +5,32 @@ include "../lib/connection.php";
 require_once "../lib/GJPCheck.php";
 require_once "../lib/exploitPatch.php";
 require_once "../lib/mainLib.php";
+
+// Example custom error handler
+function customErrorHandler($errno, $errstr, $errfile, $errline)
+{
+	// Log or handle the error as needed
+	error_log("Error: $errstr in $errfile on line $errline");
+}
+
+// Set the custom error handler
+set_error_handler("customErrorHandler");
+
 $gs = new mainLib();
 $gjp2check = isset($_POST['gjp2']) ? $_POST['gjp2'] : $_POST['gjp'];
-if(!isset($gjp2check) OR !isset($_POST["rating"]) OR !isset($_POST["levelID"]) OR !isset($_POST["accountID"])){
+if (!isset($gjp2check) or !isset($_POST["rating"]) or !isset($_POST["levelID"]) or !isset($_POST["accountID"])) {
 	exit("-1");
 }
 $gjp = ExploitPatch::remove($gjp2check);
 $rating = ExploitPatch::remove($_POST["rating"]);
 $levelID = ExploitPatch::remove($_POST["levelID"]);
 $id = GJPCheck::getAccountIDOrDie();
-if($gs->checkPermission($id, "actionRateDemon") == false){
+if ($gs->checkPermission($id, "actionRateDemon") == false) {
 	exit("-1");
 }
 $auto = 0;
 $demon = 0;
-switch($rating){
+switch ($rating) {
 	case 1:
 		$dmn = 3;
 		$dmnname = "Easy";
@@ -42,8 +53,8 @@ switch($rating){
 		break;
 }
 $timestamp = time();
-$query = $db->prepare("UPDATE levels SET starDemonDiff=:demon WHERE levelID=:levelID");	
-$query->execute([':demon' => $dmn, ':levelID'=>$levelID]);
+$query = $db->prepare("UPDATE levels SET starDemonDiff=:demon WHERE levelID=:levelID");
+$query->execute([':demon' => $dmn, ':levelID' => $levelID]);
 $query = $db->prepare("INSERT INTO modactions (type, value, value3, timestamp, account) VALUES ('10', :value, :levelID, :timestamp, :id)");
 $query->execute([':value' => $dmnname, ':timestamp' => $timestamp, ':id' => $id, ':levelID' => $levelID]);
 echo $levelID;

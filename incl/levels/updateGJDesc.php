@@ -6,6 +6,16 @@ require_once "../lib/GJPCheck.php";
 $GJPCheck = new GJPCheck();
 require_once "../lib/exploitPatch.php";
 require_once "../lib/mainLib.php";
+
+function customErrorHandler($errno, $errstr, $errfile, $errline)
+{
+	// Log or handle the error as needed
+	error_log("Error: $errstr in $errfile on line $errline");
+}
+
+// Set the custom error handler
+set_error_handler("customErrorHandler");
+
 $mainLib = new mainLib();
 //here im getting all the data
 $levelDesc = ExploitPatch::remove($_POST["levelDesc"]);

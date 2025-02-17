@@ -43,4 +43,3 @@ if (!empty($mSOnly[0]) and $mSOnly[0] == 2) {
         echo -1;
     }
 }
-?>

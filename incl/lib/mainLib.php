@@ -23,6 +23,7 @@ class mainLib {
 			"Geometrical Dominator by Waterflame",
 			"Deadlocked by F-777",
 			"Fingerbang by MDK",
+			"Explorers by Hinkik",
 			"The Seven Seas by F-777",
 			"Viking Arena by F-777",
 			"Airborne Robots by F-777",
@@ -703,7 +704,7 @@ class mainLib {
 		$query = $db->prepare("INSERT INTO modactions (type, value, value3, timestamp, account) VALUES ('3', :value, :levelID, :timestamp, :id)");
 		$query->execute([':value' => $coins, ':timestamp' => time(), ':id' => $accountID, ':levelID' => $levelID]);
 	}
-	public function songReupload($url){
+	public function songReupload($url, $name, $author){
 		require __DIR__ . "/../../incl/lib/connection.php";
 		require_once __DIR__ . "/../../incl/lib/exploitPatch.php";
 		$song = str_replace("www.dropbox.com","dl.dropboxusercontent.com",$url);
@@ -716,8 +717,6 @@ class mainLib {
 			if($count != 0){
 				return "-3";
 			}
-			$name = ExploitPatch::remove(urldecode(str_replace([".mp3",".webm",".mp4",".wav"], "", basename($song))));
-			$author = "Reupload";
 			$info = $this->getFileInfo($song);
 			$size = $info['size'];
 			if(substr($info['type'], 0, 6) != "audio/")
